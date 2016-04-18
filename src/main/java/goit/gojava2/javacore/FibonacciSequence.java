@@ -4,41 +4,6 @@ import java.util.ArrayList;
 
 public class FibonacciSequence {
 
-//    public static void main(String[] args) {
-//        FibonacciSequence fibSeq = new FibonacciSequence();
-//        fibSeq.start();
-//    }
-
-//    public void start() {
-//        int enteredInteger;
-//        try {
-//            enteredInteger = connectUser();
-//            checkInteger(enteredInteger);
-//            List<Integer> result = getFibSeq(enteredInteger);
-//            System.out.println("Fibonacci sequence < " + enteredInteger + " = " + result);
-//        } catch (InputMismatchException ime) {
-//            System.out.println("[Error]: Entered data isn't integer.");
-//        } catch (NegativeIntegerException nie) {
-//            System.out.println("[Error]: Entered number is " + nie.getValue() + ". Number should " +
-//                    "be" + " > 0.");
-//        }
-//    }
-
-//    public int connectUser() throws InputMismatchException {
-//        int enteredInteger;
-//
-//        try (Scanner in = new Scanner(System.in)) {
-//            System.out.println("\t FIBONACCI SEQUENCE \t");
-//            System.out.println("Enter positive integer");
-//            if (!in.hasNextInt()) {
-//                throw new InputMismatchException();
-//            }
-//            enteredInteger = in.nextInt();
-//        }
-//
-//        return enteredInteger;
-//    }
-
     public void checkInteger(int enteredInteger) throws NegativeIntegerException {
         if (enteredInteger < 1) {
             throw new NegativeIntegerException(enteredInteger);
